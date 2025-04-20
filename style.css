@@ -77,6 +77,7 @@ a {
   color: white;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .free-demo-section {
@@ -248,7 +249,7 @@ footer {
 
 /* 3D Cube Styles */
 .cube-wrapper {
-  perspective: 1000px;
+  perspective: 1200px;
   width: 360px;
   height: 360px;
   margin: auto;
@@ -259,7 +260,7 @@ footer {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  animation: rotateCube 20s infinite ease-in-out;
+  animation: rotateCube 16s infinite linear;
 }
 
 .face {
@@ -276,10 +277,9 @@ footer {
   max-width: 90%;
   max-height: 90%;
   border-radius: 1rem;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Perfect cube faces */
 .face1 { transform: rotateY(0deg) translateZ(180px); }
 .face2 { transform: rotateY(90deg) translateZ(180px); }
 .face3 { transform: rotateY(180deg) translateZ(180px); }
@@ -287,31 +287,27 @@ footer {
 
 @keyframes rotateCube {
   0%    { transform: rotateY(0deg); }
-  10%   { transform: rotateY(-90deg); }
   25%   { transform: rotateY(-90deg); }
-
-  35%   { transform: rotateY(-180deg); }
   50%   { transform: rotateY(-180deg); }
-
-  60%   { transform: rotateY(-270deg); }
   75%   { transform: rotateY(-270deg); }
-
-  85%   { transform: rotateY(-360deg); }
   100%  { transform: rotateY(-360deg); }
 }
 
-/* Media Queries */
+/* Responsive cube on small screens */
 @media (max-width: 768px) {
+  .cube-wrapper {
+    width: 240px;
+    height: 240px;
+  }
+
   .hero-section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
   }
 
   .designer-line {
-    font-size: 1.2rem;
-  }
-
-  .therapy-box {
-    padding: 1.5rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
   }
 }
