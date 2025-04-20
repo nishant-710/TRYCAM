@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .hero-banner {
+    background: linear-gradient(to right, #ff6a00, #ff9500);
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-banner h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .hero-banner p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .testimonial-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(255, 102, 0, 0.15);
+  }
+  
+  .testimonial-card img,
+  .testimonial-card video {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .footer {
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+  
