@@ -12,6 +12,13 @@ html, body, #root {
   font-family: 'Montserrat', sans-serif;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+body {
+  overflow-y: hidden;
+}
+
 /* Scrollbar */
 body::-webkit-scrollbar {
   width: 8px;
@@ -83,7 +90,8 @@ a {
   background: linear-gradient(to right, #ff6a00f4, #ffa947);
   color: white;
   padding: 4rem 1rem;
-  overflow-x: hidden;
+/*   overflow-x: hidden; */
+  overflow-y: hidden;
 }
 .hero-img {
   max-width: 100%;
