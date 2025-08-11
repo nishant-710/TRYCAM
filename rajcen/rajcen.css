@@ -85,6 +85,8 @@ body {
   width: 55px;
   height: auto;
   display: block;
+  position: relative;
+  top: -13px;
 }
 
 .centers-container {
