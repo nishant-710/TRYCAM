@@ -340,7 +340,9 @@ footer {
   }
 }
 
-/* Responsive Design */
+/*Or Baniye kya haal hai badia to hoga hi company ne 6 logo ko nikal diya or tujhe rakh liya*/
+
+ /* Responsive Design */
 @media (max-width: 768px) {
   .cube-wrapper {
     width: 240px;
